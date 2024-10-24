@@ -16,8 +16,5 @@ RUN --mount=type=cache,target=/docs/node_modules \
 
 COPY . .
 
-# Expose the port MkDocs will run on
-EXPOSE 8000 35729
-
 # Set the startup script as the entry point
 ENTRYPOINT ["./entrypoint.sh"]
