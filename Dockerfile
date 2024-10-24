@@ -6,8 +6,6 @@ RUN \
     --mount=type=cache,target=/etc/apk/cache \
     apk add nodejs npm
 
-WORKDIR /docs
-
 COPY package.json .
 RUN --mount=type=cache,target=/docs/node_modules \
     --mount=type=cache,target=/root/.cache \
